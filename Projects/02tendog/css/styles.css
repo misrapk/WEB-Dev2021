@@ -9,6 +9,23 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-family: 'Montserrat, sans-serif';
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat, sans-serif';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    color: #9b9292;
+    font-size: 1.1rem;
+}
+
 #title {
     background-color: #c91833;
     color: #fff;
@@ -19,7 +36,7 @@ h1 {
 }
 
 .navbar {
-    padding-bottom: 4.5rem;
+    padding-bottom: 0 0 0 4.5rem;
 }
 
 .navbar-brand {
@@ -29,4 +46,59 @@ h1 {
 
 .nav-item {
     padding: 0 10px;
+}
+
+.nav-linkk {
+    font-size: 1.2rem;
+    font-family: 'Montserrat, sans-serif';
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.title-image {
+    width: 60%;
+    transform: rotate(20deg);
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.f_icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.f_icon:hover {
+    color: #c91833;
+}
+
+
+/* testimonial Section  */
+
+#testimonials {
+    padding: 5% 7%;
+    text-align: center;
+    background-color: #c91833;
+    color: #fff;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 20%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #c91833;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-img {
+    width: 20%;
+    margin: 20px 20px 50px;
 }
