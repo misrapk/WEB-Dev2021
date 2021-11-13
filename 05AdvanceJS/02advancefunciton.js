@@ -13,3 +13,15 @@ console.log(double);
 const mapArray = arr.map((num) => {
     return num * 2;
 })
+
+//filter
+const filterArray = arr.filter(num => num === 5);
+console.log('filter', filterArray);
+
+//reduce
+
+const reduceArr = arr.reduce((accumulator, num) => {
+        return accumulator + num
+    }, 0) //defualt value of accumulator
+
+console.log('reduce', reduceArr);
