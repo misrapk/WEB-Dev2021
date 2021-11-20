@@ -40,13 +40,13 @@ export const players = [{
     {
         id: 7,
         name: 'Jadeja',
-        role: 'All Rounder',
+        role: 'AllRounder/Left Spinner',
         imgUrl: 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c170670/ravindra-jadeja.jpg'
     },
     {
         id: 8,
         name: 'Ashwin',
-        role: 'Spin Bowler',
+        role: 'AllRounder/Off-Spinner',
         imgUrl: 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c153372/ravichandran-ashwin.jpg',
     },
     {
