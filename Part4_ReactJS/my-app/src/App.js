@@ -2,38 +2,48 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import { players } from "./players";
 import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 
 class App extends Component {
   constructor() {
     super();
 
-    //state always changes in the app--> like any input 
+    //state always changes in the app--> like any input
     this.state = {
-      players: players,
+      players: [],
       searchfield: "",
-    }
+    };
   }
 
+  componentDidMount() {
+    this.setState({ players: players });
+  }
   //this function runs every time any state change
   onSearchChage = (event) => {
-      
     this.setState({ searchfield: event.target.value });
   };
 
   render() {
-      //manage the state
+    //manage the state
     const filterPlayer = this.state.players.filter((player) => {
-      return player.role
+      return player.name
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
     });
-    return (
-      <div className="tc">
-        <h1>Indian Cricket Team</h1>
-        <SearchBox searchChange={this.onSearchChage} />
-        <CardList players={filterPlayer} />
-      </div>
-    );
+    if (this.state.players.length === 0) {
+      return <h1>Loading...</h1>;
+    } else {
+      return (
+        <div className="tc">
+          <h1 className = 'f1'> Indian Cricket Team </h1>
+          <SearchBox searchChange={this.onSearchChage} />
+        
+          <Scroll>
+            <CardList players={filterPlayer} />
+          </Scroll>
+        </div>
+      );
+    }
   }
 }
 
