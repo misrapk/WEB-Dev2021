@@ -13,7 +13,7 @@ const CardList = ({ players }) => {
       />
     );
   });
-  return <div>{cardComponenet};</div>;
+  return <div> {cardComponenet}; </div>;
 };
 
 export default CardList;
